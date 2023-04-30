@@ -17,11 +17,17 @@ header {
 main {
   flex-grow: 2;
   height: 55%;
+  border: 5px dotted mediumpurple;
+  border-radius: 1em;
+  padding: 1%
 }
 
 aside {
   flex-grow: 1;
   height: 55%;
+  border: 5px dotted mediumpurple;
+  border-radius: 1em;
+  padding: 1%
 }
 
 app-static-footer {
