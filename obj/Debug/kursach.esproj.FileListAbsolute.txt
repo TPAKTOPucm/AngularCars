@@ -1,0 +1,2 @@
+C:\Users\ДМС\source\repos\kursach\obj\Debug\kursach.esproj.SuggestedBindingRedirects.cache
+C:\Users\ДМС\source\repos\kursach\obj\Debug\kursach.esproj.CoreCompileInputs.cache
