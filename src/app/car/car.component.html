@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{car.Make}}</mat-card-title>
+    <mat-card-subtitle>{{car.Model}}</mat-card-subtitle>
+    <mat-card-subtitle>Максимальная скорость: {{car.Speed}} км/ч</mat-card-subtitle>
+    <mat-card-subtitle>Мощность двигателя: {{car.Power}} л.с.</mat-card-subtitle>
+    <mat-card-subtitle>Дополнительные опции:</mat-card-subtitle>
+    <ul>
+      <li *ngFor="let e of car.Extras">{{e}}</li>
+    </ul>
+  </mat-card-header>
+  <mat-card-actions align="end">
+    <button mat-button onclick="deleteMe()">Delete</button>
+  </mat-card-actions>
+</mat-card>

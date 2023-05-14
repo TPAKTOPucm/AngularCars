@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AddCarFormComponent } from './add-car-form/add-car-form.component';
 import { CarsComponent } from './cars/cars.component';
 import { StaticFooterComponent } from './static-footer/static-footer.component';
+import { CarComponent } from './car/car.component';
 
 
 
@@ -17,7 +18,8 @@ import { StaticFooterComponent } from './static-footer/static-footer.component';
     AppComponent,
     AddCarFormComponent,
     CarsComponent,
-    StaticFooterComponent
+    StaticFooterComponent,
+    CarComponent
   ],
   imports: [
     MatButtonModule,
