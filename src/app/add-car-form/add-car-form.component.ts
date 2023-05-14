@@ -7,8 +7,14 @@ import { carsService } from '../cars.service';
   styleUrls: ['./add-car-form.component.css']
 })
 export class AddCarFormComponent {
+  Make!: string
+  Model!: string
+  Speed!: number
+  Power!: number
+  Extra!: string
   constructor(private service: carsService) { }
-  addCar(make: HTMLInputElement, model: HTMLInputElement, speed: HTMLInputElement, power: HTMLInputElement, extras: HTMLInputElement) {
-    this.service.addCar(make.value, model.value, parseInt(speed.value), parseInt(power.value), extras.value.split("\n"))
+  addCar() {
+    console.log(this.Make)
+    this.service.addCar(this.Make, this.Model, this.Speed, this.Power, this.Extra.split("\n"))
   }
 }
