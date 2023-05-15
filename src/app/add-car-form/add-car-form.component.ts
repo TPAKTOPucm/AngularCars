@@ -4,19 +4,14 @@ import { carsService } from '../cars.service';
 @Component({
   selector: 'app-add-car-form',
   templateUrl: './add-car-form.component.html',
-  styleUrls: ['./add-car-form.component.css'],
-  //template: `<input type="text" value="{{Make}}" />`
-             //<input type="text" value="{{Model}}" />
-             //<input type="number" value="{{Speed}}" />
-             //<input type="number" value="{{Power}}" />
-             //<textarea value="{{Extra}}" />`
+  styleUrls: ['./add-car-form.component.css']
 })
 export class AddCarFormComponent {
-  @Input() make: string = "Nissan"
-  @Input() model: string = "Qashqai"
-  @Input() speed: number = 220
-  @Input() power: number  = 150
-  @Input() extra: string = "Кондиционер\nподогрев сидений"
+  @Input() make!: string
+  @Input() model!: string
+  @Input() speed!: number
+  @Input() power!: number
+  @Input() extra!: string
   constructor(private service: carsService) { }
   addCar() {
     console.log(this.make)
