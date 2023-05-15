@@ -22,7 +22,7 @@ export class carsService {
   }
   removeCar(car: Car) {
     this.cars$.pipe(take(1)).subscribe((arr) => {
-      arr.splice(arr.indexOf(car))
+      arr.splice(arr.indexOf(car), 1)
       this.cars.next(arr)
     })
   }
