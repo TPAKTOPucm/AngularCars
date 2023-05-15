@@ -2,27 +2,27 @@
   <h3>Добавить авто</h3>
   <div class="form-group">
     <label for="Make">Марка</label>
-    <input class="form-control" type="text" [(ngModel)]="Make" data-val="true" data-val-required="Данное поле является обязательным." id="Make">
+    <input class="form-control" type="text" [(ngModel)]="make" data-val="true" data-val-required="Данное поле является обязательным." id="Make">
     <span class="text-danger field-validation-valid" data-valmsg-for="Make" data-valmsg-replace="true"></span>
   </div>
   <div class="form-group">
     <label for="Model">Модель</label>
-    <input class="form-control" type="text" [(ngModel)]="Model" data-val="true" data-val-required="Данное поле является обязательным." id="Model">
+    <input class="form-control" type="text" [(ngModel)]="model" data-val="true" data-val-required="Данное поле является обязательным." id="Model">
     <span class="text-danger field-validation-valid" data-valmsg-for="Model" data-valmsg-replace="true"></span>
   </div>
   <div class="form-group">
     <label for="Speed">Максимальная скорость</label>
-    <input class="form-control" type="number" [(ngModel)]="Speed" data-val="true" data-val-required="Данное поле является обязательным." id="Speed">
+    <input class="form-control" type="number" [(ngModel)]="speed" data-val="true" data-val-required="Данное поле является обязательным." id="Speed">
     <span class="text-danger field-validation-valid" data-valmsg-for="Speed" data-valmsg-replace="true"></span>
   </div>
   <div class="form-group">
     <label for="Power">Мощность двигателя</label>
-    <input class="form-control" type="number" [(ngModel)]="Power" data-val="true" data-val-required="Данное поле является обязательным." id="Power">
+    <input class="form-control" type="number" [(ngModel)]="power" data-val="true" data-val-required="Данное поле является обязательным." id="Power">
     <span class="text-danger field-validation-valid" data-valmsg-for="Power" data-valmsg-replace="true"></span>
   </div>
   <div class="form-group">
     <label for="Extra">Дополнительные опции</label>
-    <textarea class="form-control" [(ngModel)]="Extra" id="Extras" value=""></textarea>
+    <textarea class="form-control" [(ngModel)]="extra" id="Extra" value=""></textarea>
   </div>
   <button mat-raised-button (click)="addCar()">Добавить</button>
 </form>

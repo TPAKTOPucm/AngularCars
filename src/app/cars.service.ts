@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable, take } from 'rxjs';
   providedIn: 'root'
 })
 export class carsService {
-  cars: BehaviorSubject<Car[]> = new BehaviorSubject<Car[]>([])
+  cars: BehaviorSubject<Car[]> = new BehaviorSubject<Car[]>([{ Make: "lada", Model:"calina", Speed:1, Extras:[], Power:1 }])
   cars$: Observable<Car[]> = this.cars.asObservable()
   addCar(make: string, model: string, speed: number, power: number, extras: string[]) {
     let car: Car = {

@@ -11,6 +11,6 @@ import { carsService } from '../cars.service';
 export class CarsComponent {
   cars$: Observable<Car[]>
   constructor(private service: carsService) {
-    this.cars$ = this.service.cars$
+    this.cars$ = this.service.cars
   }
 }
